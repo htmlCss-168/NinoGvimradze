@@ -1,0 +1,255 @@
+* 
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Butterfly Kids', cursive;
+  }
+
+  .social
+            {
+                position: fixed;
+                display: flex;
+                height:100%;
+                flex-direction:  column;
+                justify-content: center;
+                transform: translate(-115px);
+                 /* background-color: chartreuse; */
+            }
+
+ .social a
+           {
+              color:green;
+              text-decoration: none;
+              font-weight: 600;
+              
+              display: block;
+              margin:8px;
+              padding:20px;
+              width: 150px;
+              text-align: right;
+              border-radius: 5%;
+              transition: 2s;
+              transition-property: transform;
+              background-color:chartreuse;
+
+           }    
+           
+   .social a:hover
+                   {
+                    transform: translate(110px);
+                   } 
+    .social a:nth-child(1)  i 
+                                {
+                                    color: blue;
+                                }  
+    .social a:nth-child(2)  i
+                                 {
+                                    color:purple;
+                                 }
+
+    .social a:nth-child(3)  i
+                                 {
+                                    color:cornflowerblue;
+                                 }
+     
+    .social a:nth-child(4)  i
+                                 {
+                                    color: red;
+                                 }
+    .social i 
+                 {
+                    margin-left: 10px;
+                 }
+
+    
+  .Hero-Div
+        {  
+            width: 1200px;
+            /* height: 1700px; */
+            border: solid 2px black;
+            margin: auto;}
+
+#Header-Box 
+           {display: flex;
+            justify-content: space-between;
+            /* border: 5px solid chartreuse; */
+            height: 100px;
+            
+           }
+
+        
+
+.Header-Logo-Img 
+          { margin-bottom: 28px;
+            width: 150px;
+            height:150px;
+            rotate: -20deg;
+
+          }
+.Logo-Box
+   {
+    display: flex;
+    align-items: center;
+    animation: jump 1s ease-in infinite alternate;
+   }
+   /* @keyframes jump
+
+        {
+            0% {transform: rotate(3deg);}
+
+            
+        } */
+.Logo-Box h3{
+    font-family: 'Butterfly Kids', cursive;
+    color: crimson;
+    rotate: 20deg;
+    animation-name: text1;
+    animation-iteration-count: infinite;
+    animation-duration: 0.4s;
+    
+    
+}
+/* @keyframes text1 
+{ from {color: crimson;} to {color:rgb(31, 44, 185);}} */
+
+
+.Logo-Box h3:hover
+                  {
+                    text-shadow: 4px 4px 2px  cornflowerblue;
+                    animation-name: text-anim;
+                    animation-duration: 0.2s;
+                    animation-iteration-count: infinite;
+                    cursor: pointer;
+                    
+                  }
+                  @keyframes text-anim 
+                  {
+                   from {color:crimson}
+                   to {color:purple}
+                  }
+
+/* ------------------- */
+
+
+.Nav-Box 
+        {
+        /* border: 2px solid palevioletred; */
+        width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: cornsilk; */
+        border-radius: 30px;
+        
+    
+    
+    
+    }
+
+
+.Nav-Box a
+        { 
+            text-decoration: none;
+            font-family: 'Butterfly Kids', cursive;
+            color: crimson;
+            margin: 20px;
+
+    
+          }
+
+.Nav-Box a:hover 
+        {   color: purple;
+            transform: scale(1.5);
+            
+        }
+.Nav-Box:hover
+           {
+            border-radius:0;
+            background-color:white;
+           }
+
+
+/* ---------------------------------------- */
+
+
+
+h2
+    {   
+        text-align: center;
+        font-family: 'Butterfly Kids', cursive;
+        color:green ;
+        background-color: chartreuse;
+        border-radius: 30px;
+        margin: 25px;
+        font-size: 30px;
+    }
+
+
+
+   /* .Anim 
+         { position: sticky;
+        top:10px} */
+
+/* ooooooooooooooooooo */
+
+
+
+
+
+ .Test 
+    {   background-image:url("/folder2/style2/img2/15.jpg");
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 15px;
+        background-color: chartreuse;
+        position: sticky;
+        top: 0;
+        border-radius: 30px;
+        font-family: 'Butterfly Kids', cursive;
+        cursor: pointer;
+        
+    } 
+.Test h3 
+           { color:green;}
+
+/* ----------------Table------------ */
+
+
+
+.Table-Box
+            {  
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+.Colspan-Box
+          {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+          }
+.Article-Box
+              {
+                display: flex;
+              }
+
+.Article-Img-Box img
+                    {
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 25px;
+                        margin-left: 25px;
+                        border: 2px solid rgb(171, 223, 171);
+                        border-radius: 20px;
+                    }
+.Article-Img-Box img:hover  
+                            {
+                                
+                                transform: scale(1.1);
+                                border: none;
+                                
+                             
+                                
+                            }
