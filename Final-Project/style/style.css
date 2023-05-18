@@ -380,7 +380,7 @@ li a
 ------------------ Center video box ---------------------- */
 .SlideShow-Box
             {  
-                background-color: aqua;
+                /* background-color: aqua; */
                 display: inline-block;
                 margin-top: 180px;
                 margin-left:155px;
@@ -391,6 +391,8 @@ li a
                 overflow: hidden;
                 /* position: relative; */
                 background-image: url(/style/imgs/mainimage222222.jpg);
+                background-size: cover;
+                background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 text-align: center;
