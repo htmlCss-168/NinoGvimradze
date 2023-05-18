@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+ }
+body 
+     {  
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        /* position: relative; */
+        background:#3B9C9C
+        
+     }
+
+ @font-face {
+    font-family:fall; 
+    src: url("/style/fonts/FallIsComingRegular-Mx9B.ttf");
+ 
+}
+@font-face {
+    font-family: simi;
+    src: url("/style/fonts/Sigmar-Regular.ttf");
+    
+}
+
+@font-face {
+    font-family: hand;
+    src: url("/style/fonts/PatrickHandSC-Regular.ttf");
+}
+
+nav 
+ {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    padding-right: 35px;
+    font-family: fall;
+    font-size: 25px;
+    font-weight: 800;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 10px 10px rgba(43, 2, 33, 0.18);
+    border-right: 45px solid;
+    /* border-left: 45px solid ; */
+    border-image-source: url(/style/imgs/border/star_frame-removebg-preview.png);
+    border-image-repeat: repeat;
+    border-image-slice:100;
+    
+    
+ }
+ 
+ ul 
+  { 
+    list-style: none;
+    /* border: 55px solid;
+    border-image-source: url(/style/imgs/border/border-removebg-preview.png);
+    border-image-repeat: repeat;
+    border-image-slice:100; */
+  }
+li
+   {
+    display:inline-block;
+   
+
+   }
+
+li a
+    {
+        margin-left: 40px;
+        padding: 20px;
+        text-decoration: none;
+        /* background-color: #ffa500; */
+        /* color:#dda0dd; */
+        color: #00b7eb ;
+
+        
+    }
+    nav a.active::before 
+    {
+       display: inline-block;
+       content: "*";
+       color: chartreuse;
+   
+    }
+  
+  nav a {transition: all .6s ease-in-out}
+
+  nav a:hover
+
+           {
+            color:#e60073;
+            transform: scale(1.5);
+           
+           }
+       
+#LOGO
+      {
+        color: #e60073;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 35px;
+        margin: 20px 0 20px 50px;
+        animation: shine 2s ease-in-out infinite alternate;
+      }
+
+
+      @keyframes shine {
+        from { text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+    }
+    to 
+    {
+        text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+       
+
+   #Header-Img:hover 
+               {
+                 content: url("/style/imgs/50-removebg-preview-removebg-preview.png");}
+
+
+        /* -------- enrol form --------- */
+
+
+
+
+
+              .form-style{
+                /* background-color: #800080; */
+                margin-top: 200px;
+                max-width: 650px;
+                
+                
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            }
+            .form-style label{
+                display:block;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+            .form-style label > span{
+                float: left;
+                width: 100px;
+                color: #F072A9;
+                font-weight: bold;
+                font-size: 13px;
+                text-shadow: 1px 1px 1px #fff;
+            }
+            .form-style fieldset{
+                border-radius: 10px;
+                
+                margin: 0px 0px 10px 0px;
+                border: 1px solid #FFD2D2;
+                padding: 20px;
+                background: #FFF4F4;
+                box-shadow: inset 0px 0px 15px #FFE5E5;
+               
+            }
+            .form-style fieldset legend{
+                color: #FFA0C9;
+                border-top: 1px solid #FFD2D2;
+                border-left: 1px solid #FFD2D2;
+                border-right: 1px solid #FFD2D2;
+                border-radius: 5px 5px 0px 0px;
+                
+                background: #FFF4F4;
+                padding: 0px 8px 3px 8px;
+                box-shadow: -0px -1px 2px #F1F1F1;
+               
+                font-weight: normal;
+                font-size: 12px;
+            }
+            .form-style textarea{
+                width:250px;
+                height:100px;
+            }
+            
+            
+            
+              
+            .required{
+                color:red;
+                font-weight:normal;
+            }
+
+
+.form-style input 
+                {
+                    border-radius: 5px;
+                    border-color: #e60073;
+                    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+                    color:purple;
+                    font-family: hand;
+                    font-weight: 900;
+                    width: 300px;
+                    height: 30px;
+                }
+
+
+
+
+                 /* ------------footer------- */
+
+
+ .Footer-Box  
+                 {
+                    display: flex;
+                    /* background-color: rgb(0,0,0,0.5); */
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    margin-top: 200px;
+                    padding: 20px;
+                    border-top: 55px solid blueviolet;
+                    border-image-source:url(/style/imgs/border/200.png);
+                    border-image-repeat:repeat;
+                    border-image-slice:90;
+                    
+                    
+                 }
+    .Footer-Box div
+                     {
+                        padding: 40px;
+                     }
+    .Footer-Box h4  
+                    {
+                        font-family: fall;
+                        font-size: 28px;
+                        color: #e60073;
+                    }
+    .Footer-Box span
+                   {
+                    font-family: hand;
+                    color: #800080;
+                   }
+    
+    .Footer-Logo img
+                  { 
+                    /* background-color: #E66C2C; */
+                    width:300px;
+                    transform: rotate(-10deg);
+                    
+                  }
+    
