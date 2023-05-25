@@ -1,0 +1,360 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+
+ }
+body 
+     {  
+       width: 100%;
+       
+       background: rgb(253,29,29);
+background: linear-gradient(90deg, rgb(229, 125, 149) 50%, rgb(244, 162, 48) 100%);
+       
+     }
+
+ @font-face {
+    font-family:fall; 
+    src: url("/style/fonts/FallIsComingRegular-Mx9B.ttf");
+ 
+}
+@font-face {
+    font-family: simi;
+    src: url("/style/fonts/Sigmar-Regular.ttf");
+    
+}
+
+@font-face {
+    font-family: hand;
+    src: url("/style/fonts/PatrickHandSC-Regular.ttf");
+}
+
+nav 
+ {
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0,0,0,0.6);
+    position:fixed;
+    top:0;
+    padding-right: 35px;
+    font-family: fall;
+    font-size: 25px;
+    font-weight: 800;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 10px 10px rgba(43, 2, 33, 0.18);
+    border-right: 45px solid;
+    /* border-left: 45px solid ; */
+    border-image-source: url(/style/imgs/border/star_frame-removebg-preview.png);
+    border-image-repeat: repeat;
+    border-image-slice:100;
+    
+    
+ }
+ 
+ ul 
+  { 
+    list-style: none;
+    /* border: 55px solid;
+    border-image-source: url(/style/imgs/border/border-removebg-preview.png);
+    border-image-repeat: repeat;
+    border-image-slice:100; */
+  }
+li
+   {
+    display:inline-block;
+   
+
+   }
+
+li a
+    {
+        margin-left: 40px;
+        font-size: 30px;
+        padding: 20px;
+        text-decoration: none;
+        /* background-color: #ffa500; */
+        /* color:#dda0dd; */
+        color: #00b7eb ;
+
+        
+    }
+    nav a.active::before 
+    {
+       display: inline-block;
+       content: "*";
+       color: chartreuse;
+   
+    }
+  
+  nav a {transition: all .6s ease-in-out}
+
+  nav a:hover
+
+           {
+            color:#e60073;
+            transform: scale(1.5);
+           
+           }
+       
+#LOGO
+      {
+        color: #e60073;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 35px;
+        margin: 20px 0 20px 50px;
+        animation: shine 2s ease-in-out infinite alternate;
+      }
+
+
+      @keyframes shine {
+        from { text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+    }
+    to 
+    {
+        text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+       
+
+   #Header-Img:hover 
+               {
+                 content: url("/style/imgs/50-removebg-preview-removebg-preview.png");}
+
+
+
+   section { 
+    /* background-color: #00b7eb; */
+              height: fit-content;
+              margin-top: -50px;
+              /* background-color: #a34dff; */
+              /* position: absolute; */
+            
+              
+              
+            }
+   section h3 
+            {
+                /* background-color: #00b7eb; */
+                position: absolute;
+                font-family:fall;
+                letter-spacing: 15px;
+                color:darkred;
+                text-shadow: 2px 2px #ffc04d;
+                font-size: 45px;
+                animation: text 1s  ease-in-out infinite alternate ;
+            }
+            @keyframes text
+            {
+             from {color:rgb(6, 4, 78)}
+             to {color:#a34dff}
+            }
+
+    /* --------             start of card container -------------- */
+    
+
+   main{
+       display:flex;
+       
+       justify-content: center;
+       height: 900px;
+       align-items: center;
+       border-radius: 10px;
+       /* background-color: #fff; */
+}
+
+.Container 
+            {  
+              position: absolute;
+                display: flex;
+                /* background-color: #e60073; */
+            }
+
+.Card 
+       {
+        margin-top: 300px;
+        height: 400px;
+        margin: 50px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+        border: 2px solid green;
+        border-radius: 15px;
+       }
+.Container img {
+    /* position:relative; */
+     height: 400px;
+     width: 580px;
+     border-radius: 3px;
+     transition: .5s;
+     background-color: #e60073;
+     
+}
+
+.Container-Text
+       {
+        font-family: hand;
+        font-size: 25px;
+        text-align: center;
+        height:160px;
+        width: 580px;
+        padding:6px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 50px; 
+        
+        border-bottom: 2px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background:rgba(106, 11, 11, 0.4);
+        color:yellow;
+        transition:  .6s ease-in-out;
+        
+        
+        
+       }
+
+.Container-Text p 
+           {
+           
+            font-size: 20px;
+            margin:5px;
+            visibility: hidden;
+            opacity: 0;
+           }
+.Container-Text span  
+           {
+            font-weight: bold;
+            color:chartreuse;
+             
+           }
+.Card:hover
+            {
+                cursor: pointer;
+            }
+.Card:hover .Container-Text 
+                  {
+                    height: 190px;
+                    bottom: 50px;
+                    opacity: .9;
+                    background:darkolivegreen
+                  }
+.Card:hover p
+                {
+                    opacity: 1;
+                    visibility: visible;
+                    font-size: 25px;
+                    font-weight: 800;
+                    color:#00b7eb;
+                 
+                }
+.Card:hover h2 
+               {
+                color:chartreuse;
+               }
+.Card:hover img 
+                {
+                    transform: scale(1.3) 
+                    
+                    rotate(-3deg);
+                }
+
+
+
+
+ /* -------------- grid section ---------------                 */
+.Grid-Box
+  {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: 200px 200px;
+    column-gap: 40px;
+    row-gap: 30px;
+    
+    /* background-color: #a34dff; */
+  }
+.Grid-Item  
+              {
+                display:grid;
+                grid-template-columns: 200px auto  ;
+                grid-gap: 10px;
+                /* background-color: darkorange; */
+                padding: 15px;
+              }
+ 
+.Grid-Img {
+  grid-row: 1/ span 2;
+  transition: transform 0.5s linear;
+  /* transform: all .2s ease-in-out; */
+  transform-origin:top left ;
+}
+.Grid-Img:hover 
+               {
+                transform: scale(1.1);
+               }
+.Grid-Header 
+                {
+                  font-family: fall;
+                  font-size: 35px;
+                  letter-spacing: 1px;
+                  color:purple
+                }
+.Grid-Text 
+           {
+              font-family:hand;
+              font-size: 18px;
+              color:wheat;
+              text-transform: capitalize;
+            letter-spacing: 2px;     
+          font-weight: 800;   }
+.Grid-Text:hover
+                {
+                  color:#e60073;font-size: 20px;
+                  
+
+                }
+
+           /* footer -----------------------      */
+.Footer-Box  
+           {
+              display: flex;
+              background-color: rgb(0,0,0,0.5);
+              justify-content: center;
+              text-align: center;
+              align-items: center;
+              /* height:200px; */
+              /* bottom:0; */
+              border-top: 55px solid blueviolet;
+              border-image-source:url(/style/imgs/border/200.png);
+              border-image-repeat:repeat;
+              border-image-slice:90
+              
+           }
+.Footer-Box div
+               {
+                  padding: 40px;
+               }
+.Footer-Box h4  
+              {
+                  font-family: fall;
+                  font-size: 35px;
+                  color: #e60073;
+              }
+.Footer-Box span
+             {
+              font-family: hand;
+              color: #800080;
+              font-weight: 800;
+              font-size: 20px;
+              letter-spacing: 1px;
+             }
+
+.Footer-Logo img
+            { 
+              /* background-color: #E66C2C; */
+              width:300px;
+              transform: rotate(-10deg);
+              
+            }
