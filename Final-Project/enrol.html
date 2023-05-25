@@ -29,95 +29,154 @@
                   <a class="active" href="enrol.html"> Enrolment </a>
               </li>
               <li>
-                  <a href="#"> Contact </a>
+                  <a href="contact.html"> Contact </a>
               </li>
           </ul>
       </nav>
     </header>
 
 
-    <div class="form-style">
-        <form >
+    <main  >
 
-        <fieldset  style="background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(153,233,148,1) 100%);">
-            <legend> Kids Enrolment Form</legend>
+        <div class="star-animation-left-side">
 
-        <label >
-            <span> First Name 
-            <span class="required">*</span>
-           </span>
-            <input type="text" /></label>
+              <img class="star-left"  src="style/imgs/pinks star.webp" style="width: 220px; top:90px; left: 100px;" alt=""> 
+              <img class="star-left"  src="style/imgs/pinks star.webp" style="width: 180px; top:150px; left: 200px;" alt="">
+              <img class="star-left"  src="style/imgs/pinks star.webp" style="width: 120px; top:200px; left: 300px;" alt="">
 
-        <label >
-            <span> Last Name
-                <span class="required">*</span>
-            </span>
-            <input type="Text" ></label>
+              
 
-            <div style="color:#F072A9; font-family: hand; font-weight:bold;">
-                <div>
-                    Gender
-                </div>
-                <label  >Male</label>
-                    <input style="width: 10px;  " type="radio" >
-            </div>
-            <div style="color: #F072A9; font-weight: bold;" >
-                
-                <label>Female</label>
-                    <input style="width: 10px;" type="radio" >
-            </div>
-                
-                
-            </label>
-        <label  >
+        </div>
+        
+        <div class="star-animation-right-side">
             
-            <span> Birth Date 
-                <span class="required">*</span>
-            </span>
-            <input  type="date">
-        </label>
-             
+            <img class="star-right"  src="style/imgs/pinks star.webp" style="width: 220px; top:200px; right: 100px;" alt=""> 
+              <img class="star-right"  src="style/imgs/pinks star.webp" style="width: 180px; top:150px; right: 150px;" alt="">
+              <img class="star-right"  src="style/imgs/pinks star.webp" style="width: 120px; top:90px; right: 200px;" alt="">
         
             
-            <div>
-        <label >
-            <span>Programs</span>
-        <select  style="background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(153,233,148,1) 100%);" >
+         
+        </div>
 
-        <option style="background-color:coral;" > </option>
-        <option style="background-color: #F072A9;" >Toddler Class</option>
-        <option style="background-color: lightgreen;" >Kids Class</option>
-        <option style="background-color: darksalmon;" >Preschool</option>
+        <form id="form" action="/" class="wrapper">
 
-        </select>
-    </label>
-</div>
-        </fieldset>
+          <div class="wrapper-poto-box">
+            <img  class="wrapper-poto" 
+           src="style/imgs/after/school-picture-background-k69ba8qgm001xj0e.jpg" alt=""></div> 
+            <div class="title" >
+                    <span>Registration form</span>  
+            </div>
 
-        <fieldset style="background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(153,233,148,1) 100%);" >
-            <legend>Message Us </legend>
-        <label > 
-            <span>Message </span>
-            <textarea style="background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);" >  </textarea>
-        </label>
-        <label>
-         <input type="submit">
-        </label>
-        </fieldset>
+            <div class="form"  >
+                    <div class="input-field" >
+                        <label for="firstname" > Child's first name: </label>
+                        <input id="firstname" type="text" class="input" >
+                    </div>
+
+                    <div class="input-field" >
+                        <label for="lastname"> Child's Last Name: </label>
+                        <input id="lastname" type="text" class="input"  >
+                    </div>
+                    
+                    <div class="input-field">
+                        <label  for="gender" > Gender</label>
+                          <div class="custom_select" >
+                              <select>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female" id="myData" >Female</option>
+                              </select>
+                          </div>
+                    </div>
+                      
+                    <div class="input-field" >
+                        <label for="date" > Child's date of birth </label>
+                        <input id="date"  type="date" class="input" >
+                       
+                    </div>
+                    
+                     <div class="input-field" >
+                        <label for="parent" > Parent/guardian name: </label>
+                        <input  id="parent" type="text" class="input" >
+                    </div>
+
+                    
+
+                    <div class="input-field">
+                        <label for="email" > Email Address: </label>
+                        <input id="email" type="text" class="input" >
+                    </div>
+
+                    <div class="input-field">
+                        <label for="phone" > Phone Number: </label>
+                        <input id="phone" type="text" class="input" >
+                    </div>
+
+                    <div class="input-field">
+                        <label for="address" >  Address: </label>
+                        <textarea  id="address" class="text-text" ></textarea>
+                    </div>
+
+                    <div class="input-field ck "  >
+                        <label for="check">
+                            <input id="check" type="checkbox">
+                            <p  style="display: inline;" >I agree </p>
+                          </label>
+                          
+                    </div> 
+
+                    <div class="input-field" >
+                        <label for="submit">
+                        <input id="submit" type="submit" value="Register" class="btn" >
+                        
+
+                    
+                      
+
+                    </div>
+
+                    
+            </div>
         </form>
-</div>
-        
+    </main>
 
+<section >
+    
+    <div class="slider" >
+        <div class="images" >
+    <input type="radio" name="slide" id="img1" checked  >
+    <input type="radio" name="slide" id="img2"  >
+    <input type="radio" name="slide" id="img3"   >
+    <img class="m1"  src="style/imgs/animatedimages/image2.jpg" alt="">
+    <img class="m2" src="style/imgs/animatedimages/image3.webp" alt="">
+    <img class="m3" src="style/imgs/programms/11.jpg" alt="">
+    </div>
+        <div class="dots">
+              <label for="img1"></label>
+              <label for="img2"></label>
+              <label for="img3"></label>
+        </div>
+    
+    </div>
 
+    <div style="  width: 100%; max-width: 700px; margin-left: 200px; " >
+         <marquee behavior="" direction="">
+            <h2 style=" font-family: fall;  font-size: 30px; color: deeppink;" >
+                Enrollment details
+            </h2>
+         </marquee>
 
+         <p style="font-size: 25px; font-family: hand; padding-top: 5px;" >
+            If after your visit you are interested in enrolling your child, you must submit an Application for Enrollment and Enrollment Deposit to secure a spot in our program <mark>or hold a space on our waitlist. </mark>  If your child is placed on the waitlist, your deposit will be held until a space becomes available. If you withdraw your child from the waitlist before a space becomes available, then your tuition deposit may be refunded, however, you must notify the Center in writing.
 
+            Once a space becomes available and has been reserved for your child, you will not be entitled to a refund. After the application and deposit is received, you will be provided with an enrollment packet and asked to schedule your orientation.
+         </p>
 
+         <img class="star-right"  src="style/imgs/pinks star.webp" style="width: 220px; top:0px; right: -300px; transform-origin: left ; " alt="">
+         <img class="star-right"  src="style/imgs/pinks star.webp" style="width: 120px; top:-50px; right: -300px; transform-origin: right ; " alt="">
+    </div>
 
-
-
-
-
-
+</section>
 
 
 
@@ -157,6 +216,9 @@
             </div>
         </div>
   
-    </footer>
+    </footer> 
+
+    
+
 </body>
 </html>
